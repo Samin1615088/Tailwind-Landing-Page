@@ -63,7 +63,7 @@ function App() {
         <div>
           <h4 className="font-bold text-xl text-gray-500 my-8 border-b-2 border-gray-200">Latest Recipes</h4>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-5 md:grid-cols-3 lg:grid-cols-4">
             {/* card go here */}
             {
               allData?.latestRecipes.map(singleData => {
@@ -74,7 +74,7 @@ function App() {
           </div>
 
           <h4 className="font-bold text-xl  mt-16 text-gray-500 my-8 border-b-2 border-gray-200">Most Popular</h4>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-5 md:grid-cols-3 lg:grid-cols-4">
             {/* card go here */}
             {
               allData?.mostPopularRecipes.map(singleData => {

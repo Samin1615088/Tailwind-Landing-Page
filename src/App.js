@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card';
+import allData from './fakeData/fakeData';
 
 function App() {
   return (
@@ -44,7 +46,7 @@ function App() {
       {/* nav end */}
 
       <main className="col-span-3 p-3 bg-gray-100 md:pl-16">
-        <div className="text-center md:text-right">
+        <div className="text-center md:text-right m-3">
           <a href="#"
             className="btn"
           >Log in</a>
@@ -63,64 +65,22 @@ function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* card go here */}
-            <div className="card">
-              <img className="object-cover w-full" src="img/stew.jpg" alt="" />
-              <div className="m-3">
-                <span className="block font-bold text-gray-600 text-lg">5 Bean Chi</span>
-                <span className="block font-light text-sm">Recipe by Mario</span>
-              </div>
-            </div>
+            {
+              allData?.latestRecipes.map(singleData => {
+                return <Card singleData={singleData} key={singleData.id} />
+              })
+            }
 
-            <div className="card">
-              <img className="object-cover w-full" src="img/stew.jpg" alt="" />
-              <div className="m-3">
-                <span className="block font-bold text-gray-600 text-lg">5 Bean Chi</span>
-                <span className="block font-light text-sm">Recipe by Mario</span>
-              </div>
-            </div>
-
-            <div className="card">
-              <img className="object-cover w-full" src="img/stew.jpg" alt="" />
-              <div className="m-3">
-                <span className="block font-bold text-gray-600 text-lg">5 Bean Chi</span>
-                <span className="block font-light text-sm">Recipe by Mario</span>
-              </div>
-            </div>
-            <div className="card">
-              <img className="object-cover w-full" src="img/stew.jpg" alt="" />
-              <div className="m-3">
-                <span className="block font-bold text-gray-600 text-lg">5 Bean Chi</span>
-                <span className="block font-light text-sm">Recipe by Mario</span>
-              </div>
-            </div>
           </div>
 
           <h4 className="font-bold text-xl  mt-16 text-gray-500 my-8 border-b-2 border-gray-200">Most Popular</h4>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* card go here */}
-            <div className="card">
-              <img className="object-cover w-full" src="img/stew.jpg" alt="" />
-              <div className="m-3">
-                <span className="block font-bold text-gray-600 text-lg">5 Bean Chi</span>
-                <span className="block font-light text-sm">Recipe by Mario</span>
-              </div>
-            </div>
-
-            <div className="card">
-              <img className="object-cover w-full" src="img/stew.jpg" alt="" />
-              <div className="m-3">
-                <span className="block font-bold text-gray-600 text-lg">5 Bean Chi</span>
-                <span className="block font-light text-sm">Recipe by Mario</span>
-              </div>
-            </div>
-
-            <div className="card">
-              <img className="object-cover w-full" src="img/stew.jpg" alt="" />
-              <div className="m-3">
-                <span className="block font-bold text-gray-600 text-lg">5 Bean Chi</span>
-                <span className="block font-light text-sm">Recipe by Mario</span>
-              </div>
-            </div>
+            {
+              allData?.mostPopularRecipes.map(singleData => {
+                return <Card singleData={singleData} key={singleData.id} />
+              })
+            }
           </div>
 
           <div className="text-center my-16">

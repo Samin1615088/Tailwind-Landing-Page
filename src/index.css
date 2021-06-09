@@ -16,12 +16,16 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 .card {
   @apply overflow-hidden rounded-md border-2 border-gray-200 cursor-pointer bg-white  shadow-md;
+}
+
+.btn {
+  @apply inline-block border-primary text-primary border-2  rounded-full py-1 px-3 mx-1;
 }
 
 /* .badge {

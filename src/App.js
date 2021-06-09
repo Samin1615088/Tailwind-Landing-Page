@@ -3,13 +3,12 @@ import './App.css';
 
 function App() {
   return (
-    <div className="grid grid-cols-4 font-nunito">
+    <div className="grid grid-cols-4 h-screen font-nunito ">
       {/* nav start */}
       <nav className="col-span-1">
         <div>
           <h1>
             <a href="/">Food Ninja</a>
-            <a href='}'>LinkedIn handle</a>
           </h1>
         </div>
 
@@ -35,23 +34,60 @@ function App() {
       </nav>
       {/* nav end */}
 
-      <main className="col-span-3">
-        <div>
+      <main className="col-span-3 p-3 bg-gray-100 pl-16">
+        <div className="text-center md:text-right">
           <a href="#"
-            className=""
+            className="btn"
           >Log in</a>
-          <a href="#">Sign up</a>
+          <a href="#"
+            className="btn"
+          >Sign up</a>
         </div>
 
-        <header>
-          <h2 >Recipes</h2>
-          <h3>For Ninjas</h3>
+        <header className="">
+          <h2 className="font-bold text-7xl text-gray-700 my-4">Recipes</h2>
+          <h3 className="text-3xl font-semibold my-8">For Ninjas</h3>
         </header>
 
         <div>
-          <h4 className="text-primary ">Latest Recipes</h4>
+          <h4 className="font-bold text-xl text-gray-500 my-8 border-b-2 border-gray-100">Latest Recipes</h4>
 
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-4 gap-8">
+            {/* card go here */}
+            <div className="card">
+              <img className="object-cover w-full" src="img/stew.jpg" alt="" />
+              <div className="m-3">
+                <span className="block font-bold text-gray-600 text-lg">5 Bean Chi</span>
+                <span className="block font-light text-sm">Recipe by Mario</span>
+              </div>
+            </div>
+
+            <div className="card">
+              <img className="object-cover w-full" src="img/stew.jpg" alt="" />
+              <div className="m-3">
+                <span className="block font-bold text-gray-600 text-lg">5 Bean Chi</span>
+                <span className="block font-light text-sm">Recipe by Mario</span>
+              </div>
+            </div>
+
+            <div className="card">
+              <img className="object-cover w-full" src="img/stew.jpg" alt="" />
+              <div className="m-3">
+                <span className="block font-bold text-gray-600 text-lg">5 Bean Chi</span>
+                <span className="block font-light text-sm">Recipe by Mario</span>
+              </div>
+            </div>
+            <div className="card">
+              <img className="object-cover w-full" src="img/stew.jpg" alt="" />
+              <div className="m-3">
+                <span className="block font-bold text-gray-600 text-lg">5 Bean Chi</span>
+                <span className="block font-light text-sm">Recipe by Mario</span>
+              </div>
+            </div>
+          </div>
+
+          <h4 className="font-bold text-xl  mt-16 text-gray-500 my-8 border-b-2 border-gray-100">Most Popular</h4>
+          <div className="grid grid-cols-4 gap-8">
             {/* card go here */}
             <div className="card">
               <img className="object-cover w-full" src="img/stew.jpg" alt="" />
@@ -78,13 +114,8 @@ function App() {
             </div>
           </div>
 
-          <h4>Latest Recipes</h4>
           <div>
-            {/* cards go here */}
-          </div>
-
-          <div>
-            <div>Load  more</div>
+            <div >Load  more</div>
           </div>
         </div>
 

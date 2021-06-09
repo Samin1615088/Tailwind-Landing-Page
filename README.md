@@ -8,4 +8,4 @@ I have made this landing page for practicing the tailwind-css framework. React i
 <img src="screenshot/webview-screenshot.png" width="600px" /> 
 
 ### :point_down: Screenshot of my (mobile) responsive landing page:
-<img src="screenshot/mobile-view-screenshot.png" height="200px" /> 
+<img src="screenshot/mobile-view-screenshot.png" width="200px" /> 

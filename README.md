@@ -5,7 +5,7 @@ I have made this landing page for practicing the tailwind-css framework. React i
 :round_pushpin: [LiveSite](https://lucid-carson-9d4779.netlify.app/ "CLICK ME")
 
 ### :point_down: Screenshot of my (web) responsive landing page:
-<img src="images/screenshot-web-response.png" width="600px" /> 
+<img src="images/webview-screenshot.png" width="600px" /> 
 
 ### :point_down: Screenshot of my (mobile) responsive landing page:
-<img src="images/screenshot-mobile-response.png" height="600px" /> 
+<img src="images/mobile-view-screenshot.png" height="600px" /> 

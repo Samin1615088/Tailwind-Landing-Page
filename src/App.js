@@ -3,11 +3,11 @@ import './App.css';
 
 function App() {
   return (
-    <div className="grid grid-cols-4 h-screen font-nunito ">
+    <div className="grid grid-cols-1 md:grid-cols-4 h-screen font-nunito ">
       {/* nav start */}
-      <nav className="col-span-1">
+      <nav className="col-span-1 mr-3 md:mr-0">
         <div className="mt-8">
-          <h1 className="text-2xl font-bold text-gray-600 text-right">
+          <h1 className="text-2xl font-bold text-gray-600 text-right ">
             <a href="/">Food Ninja</a>
           </h1>
         </div>
@@ -32,7 +32,7 @@ function App() {
           </li>
 
           <li className="my-1 py-1 border-r-4 border-transparent">
-          <a href="#" className="mr-2 flex flex-row justify-end ">
+            <a href="#" className="mr-2 flex flex-row justify-end ">
               <span>Contact </span>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 ml-1 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -43,7 +43,7 @@ function App() {
       </nav>
       {/* nav end */}
 
-      <main className="col-span-3 p-3 bg-gray-100 pl-16">
+      <main className="col-span-3 p-3 bg-gray-100 md:pl-16">
         <div className="text-center md:text-right">
           <a href="#"
             className="btn"
@@ -61,7 +61,7 @@ function App() {
         <div>
           <h4 className="font-bold text-xl text-gray-500 my-8 border-b-2 border-gray-200">Latest Recipes</h4>
 
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* card go here */}
             <div className="card">
               <img className="object-cover w-full" src="img/stew.jpg" alt="" />
@@ -96,7 +96,7 @@ function App() {
           </div>
 
           <h4 className="font-bold text-xl  mt-16 text-gray-500 my-8 border-b-2 border-gray-200">Most Popular</h4>
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* card go here */}
             <div className="card">
               <img className="object-cover w-full" src="img/stew.jpg" alt="" />
